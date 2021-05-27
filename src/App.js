@@ -6,9 +6,7 @@ import "./App.css"
 
 const App = () => {
     return <div className="app">
-        <Carousel>
-
-        </Carousel>
+        <Carousel/>
     </div>
 };
 
