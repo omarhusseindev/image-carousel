@@ -17,14 +17,45 @@
     flex: 5%;
     height: 100%;
     background-color: rgb(0, 0, 0, 0.6);
+    display: grid;
+    place-items: center;
+    color: white;
+    cursor: pointer;
 }
 .carousel-inner .right {
     flex: 5%;
     height: 100%;
     background-color: rgb(0, 0, 0, 0.6);
+    display: grid;
+    place-items: center;
+    color: white;
+    cursor: pointer;
 }
 .carousel-inner .center {
     flex: 90%;
     height: 100%;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 
+h1{
+    font-size: 5rem;
+    background-color: rgb(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 9px;
+}
+
+.thumbnail-container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 40px 0 0 0;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
 }
