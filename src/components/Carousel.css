@@ -9,7 +9,7 @@
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
 }
 
@@ -39,21 +39,13 @@
     text-align: center;
 }
 
-h2{
-    font-size: 20px;
+h1{
+    font-size: 30px;
     background-color: rgb(255, 255, 255, 0.6);
-    padding: 20px;
+    padding: 20px 0;
     border-radius: 9px;
 }
-/* 
-h1 {
-    position: absolute;
-    top: 0;
-    align-items: center;
-    width: 60%;
-    text-align: center;
-    margin-top: 20px;
-} */
+
 
 .thumbnail-container {
     width: 100%;
@@ -67,4 +59,5 @@ h1 {
     width: 100px;
     height: 100px;
     margin: 5px;
+    cursor: pointer;
 }

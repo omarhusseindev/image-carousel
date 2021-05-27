@@ -80,7 +80,7 @@ class Carousel extends Component {
                 <ArrowBackIosIcon style={{ fontSize: 30 }} />
               </div>
               <div className="center">
-                <h2>{postData.galleryImages[this.state.currentImg].name}</h2>
+                <h1>{postData.galleryImages[this.state.currentImg].name}</h1>
               </div>
               <div className="right" onClick={this.handleRightClick}>
                 <ArrowForwardIosIcon style={{ fontSize: 30 }} />
