@@ -1,6 +1,8 @@
 export const imageData = () => {
    return fetch(
-     "https://cors-anywhere.herokuapp.com/http://dk-frontend-test.s3-eu-west-1.amazonaws.com/index.json"
+     "/index.json", {
+        mode: 'no-cors'
+     }
    )
      .then((response) => response.json())
      .then((response) => {

@@ -45,6 +45,15 @@ h1{
     padding: 20px 0;
     border-radius: 9px;
 }
+@media only screen and (max-width: 480px) {
+    .carousel-inner .center{
+        position: relative;
+        top: 120px;
+    }
+    h1{
+        font-size: 22px;
+    }
+  }
 
 
 .thumbnail-container {
