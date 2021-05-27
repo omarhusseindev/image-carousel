@@ -1,13 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import Carousel from "./components/Carousel.js"
+import Carousel from "./components/Carousel.js";
 
-import "./App.css"
+import "./App.css";
 
 const App = () => {
-    return <div className="app">
-        <Carousel/>
+  return (
+    <div className="app">
+      <Carousel />
     </div>
+  );
 };
 
 export default App;

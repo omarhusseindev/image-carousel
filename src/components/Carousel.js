@@ -21,10 +21,20 @@ class Carousel extends Component {
   }
 
   handleLeftClick = (e) => {
+    let totalImages;
+    this.state.data.map((postData) => (
+      totalImages = postData.galleryImages.length
+    ));
+   
     if (this.state.currentImg > 0) {
       this.setState({
         currentImg: this.state.currentImg - 1,
       });
+    }
+    if(this.state.currentImg === 0) {
+        this.setState({
+            currentImg: totalImages - 1,
+          });
     }
   };
   handleRightClick = (e) => {
@@ -37,6 +47,12 @@ class Carousel extends Component {
       this.setState({
         currentImg: this.state.currentImg + 1,
       });
+    }
+
+    if (this.state.currentImg === totalImages - 1){
+        this.setState({
+            currentImg: 0,
+          });
     }
   };
 
@@ -64,7 +80,7 @@ class Carousel extends Component {
                 <ArrowBackIosIcon style={{ fontSize: 30 }} />
               </div>
               <div className="center">
-                <h1>{postData.galleryImages[this.state.currentImg].name}</h1>
+                <h2>{postData.galleryImages[this.state.currentImg].name}</h2>
               </div>
               <div className="right" onClick={this.handleRightClick}>
                 <ArrowForwardIosIcon style={{ fontSize: 30 }} />
